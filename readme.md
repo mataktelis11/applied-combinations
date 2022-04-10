@@ -6,7 +6,7 @@ A detailed documentation is provided in Greek (.pdf).
 
 The first algorithm creates a *random undirected graph* of *n* nodes and *k* edges.
 
-We define the graph as $G = (V,E)$, where $V = \{1,2, \dots, n\}$ and $|E| = k$. $E$ is the a set that contains pairs of nodes. It is known that a graph can have a maximum of $N = \binom{n}{2}$ nodes.
+We define the graph as *G = (V,E)*, where *V = {1,2, . . . , n}* and *|E| = k*. *E* is the a set that contains pairs of nodes. It is known that a graph can have a maximum of <img src="https://render.githubusercontent.com/render/math?math=N = \binom{n}{2}"> nodes.
 
 We just need an algorithm that iterates through all the possible edges and
 randomly selects some of them, until exactly $k$ edges are selected.
@@ -14,10 +14,11 @@ randomly selects some of them, until exactly $k$ edges are selected.
 The following is the pseudo code of the algorithm given as an answer.
 
 
-The function assumes that $k \le \binom{n}{2}$.
+The function assumes that <img src="https://render.githubusercontent.com/render/math?math=k \le \binom{n}{2}">
 
 First the $N$ is calculated. Simple find the binomial coefficient:
 
-$$N = \binom{n}{2} = \frac{n!}{2!(n-2)!} = \frac{(n-1)n}{2}$$
+
+<img src="https://render.githubusercontent.com/render/math?math=N = \binom{n}{2} = \frac{n!}{2!(n-2)!} = \frac{(n-1)n}{2}">
 
 and that explains line 2 in the pseudo code.
