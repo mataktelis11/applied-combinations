@@ -13,8 +13,9 @@ randomly selects some of them, until exactly *k* edges are selected.
 
 The following is the pseudo code of the algorithm given as an answer.
 
+<img src="https://user-images.githubusercontent.com/61196956/162618576-91c2fcd1-2dc2-41b6-b143-8d05dab49f15.png" width="800">
 
-The function assumes that <img src="https://render.githubusercontent.com/render/math?math=k \le \binom{n}{2}">
+The function assumes that <img src="https://render.githubusercontent.com/render/math?math=k \le \binom{n}{2}">.
 
 First the *N* is calculated. Simple find the binomial coefficient:
 
@@ -22,3 +23,5 @@ First the *N* is calculated. Simple find the binomial coefficient:
 <img src="https://render.githubusercontent.com/render/math?math=N = \binom{n}{2} = \frac{n!}{2!(n-2)!} = \frac{(n-1)n}{2}">
 
 and that explains line 2 in the pseudo code.
+
+<img src="https://user-images.githubusercontent.com/61196956/162618459-449f9c4d-435e-4c82-9fae-64f918b5cf92.png" width="300">
