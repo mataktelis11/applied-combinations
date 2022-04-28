@@ -17,8 +17,7 @@ The first algorithm creates a *random undirected graph* of *n* nodes and *k* edg
 
 We define the graph as *G = (V,E)*, where *V = {1,2, . . . , n}* and *|E| = k*. *E* is the a set that contains pairs of nodes. It is known that a graph can have a maximum of <img src="https://render.githubusercontent.com/render/math?math=N = \binom{n}{2}"> nodes.
 
-We just need an algorithm that iterates through all the possible edges and
-randomly selects some of them, until exactly *k* edges are selected.
+We just need an algorithm that iterates through all the possible edges and randomly selects some of them, until exactly *k* edges are selected.
 
 The following is the pseudo code of the algorithm given as an answer.
 
@@ -65,3 +64,6 @@ Time elapsed 1.2120999599574134e-05
 [(1, 4), (2, 3), (2, 4), (3, 4)]
 $ 
 ```
+
+
+to do: break this in multiple parts... it's gonna take more lines.
