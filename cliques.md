@@ -30,3 +30,6 @@ We can now state that C_l = A_{x_{l-1}} ^ B_{x_{l-1}} ^ C_{l-1}
 The sets A and B can be calculated before the algorithm starts, and will be uses as AB = A ^ B.
 
 Below is the backtracking algorithm for finding the cliques. It used by calling AllCliques(0).
+
+<img src="https://user-images.githubusercontent.com/61196956/170009154-7d41514b-1e8e-4c0d-8313-6c1b82b8c216.png" width="750">
+
