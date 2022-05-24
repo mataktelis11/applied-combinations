@@ -9,3 +9,8 @@ This project was made for an exam for the lesson Applied Combinatorics, in Unive
 ## Contents
 
 - [Generating a random undirected graph](./randgraph.md)
+- [Finding all the Cliques of an undirected graph with Backtracking](./cliques.md)
+
+## Sources
+
+- https://www.site.uottawa.ca/~lucia/courses/5165-10/Backtracking.pdf
