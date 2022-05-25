@@ -40,7 +40,6 @@ the edges that must be contained in E, then all must be chosen necessarily.
 
 This ensures that the algorithm always provides a valid solution.
 
-<a id="randim"></a>
 ### The implementation
 
 The above algorithm is located in the file **randgraph.py**. The **createRandomGraph** function contains the actual algorithm. Notice that **E** is not actually global. This was done to make the code easier to be imported into another **.py** script.

@@ -33,3 +33,18 @@ Below is the backtracking algorithm for finding the cliques. It used by calling 
 
 <img src="https://user-images.githubusercontent.com/61196956/170009154-7d41514b-1e8e-4c0d-8313-6c1b82b8c216.png" width="750">
 
+
+
+### The implementation
+The algorithm presented above has been implemented in **Python 3** and is located in the file **cliques.py**
+
+There is a function inside of which the global variables are defined for the rest of the functions. This is was decided to make the program easily importable to other scripts without worrying about the globals. If you come up with a better approach, feel free to submit a Pull Request.
+
+The library **networkx** is used in this file to represent the graphs.
+
+The function **setup** is used to initialize the global variables. The main goal is to calculate AB which is A ^ B.
+
+Next is the function **allCliques** which implements the backtracking algorithm presented in the pseudocode.
+
+Finally, we have the function **estimateBacktrackSize** , which will be discussed in a later section.
+
