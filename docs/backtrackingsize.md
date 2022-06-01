@@ -13,7 +13,7 @@ We will refer to the backtracking tree as **|T|**.
 
 To calculate the size of the tree, we choose a random path from the **root** to a **leaf** of the tree and we assume that all nodes have the same degree for all the other possible graphs. Bellow is the pseudo code.
 
-
+<img src="https://user-images.githubusercontent.com/61196956/171458294-965dbcc4-99eb-44e0-a7e7-6d6556002e08.png" width="750">
 
 Starting from the root, in each step, we enter the cardinality of **C_l** to variable **c**. Then **c** is then multiplied with **s**, which contains the number of nodes in the current level and the result is written to **s**. We then add **s** to **N**. This way we add the number of nodes which we **assume** exists in the **next layer** of the tree. Since we start from the root, we must initialize **s** with value 1.
 
@@ -26,7 +26,11 @@ The algorithm presented above has been implemented in **Python 3** and is locate
 
 The following graph is contained in the comments of **cliques.py**
 
+<img src="https://user-images.githubusercontent.com/61196956/171457871-46abf6ca-1a85-4cfd-b4f1-a02031120112.png" width="400">
+
 The backtracking tree for the above graph is the following
+
+<img src="https://user-images.githubusercontent.com/61196956/171458895-3cf67b84-b3c9-4983-8aef-e8e7953d4f30.png" width="800">
 
 The size of the tree is 19 nodes and the function estimates 18.9666 (in an example).
 
