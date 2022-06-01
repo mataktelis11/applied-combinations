@@ -50,7 +50,7 @@ We also have the function **estimateBacktrackSize** , which will be discussed in
 
 There is a test example in the comments at the end of the file. In this example, a networkx graph is created and it is the following:
 
-
+<img src="https://user-images.githubusercontent.com/61196956/171457871-46abf6ca-1a85-4cfd-b4f1-a02031120112.png" width="400">
 
 The function **findAllCliques** is called on this Graph and all the cliques will be found. When a clique is found, it is simply printed to the terminal.
 
