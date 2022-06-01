@@ -10,14 +10,13 @@ To better understand the purpose of the code, make sure you are familiar with [G
 
 ## Table of Contents
 
-- [Generating a random undirected graph](./randgraph.md)
-- [Finding all the Cliques of an undirected graph with Backtracking](./cliques.md)
-- [Estimating the size of the Backtracking Tree](./backtrackingsize.md)
+- [Generating a random undirected graph](./docs/randgraph.md)
+- [Finding all the Cliques of an undirected graph with Backtracking](./docs/cliques.md)
+- [Estimating the size of the Backtracking Tree](./docs/backtrackingsize.md)
 
 ## Sources
 
 - https://www.site.uottawa.ca/~lucia/courses/5165-10/Backtracking.pdf
-
 - https://www.researchgate.net/publication/221605776_Estimating_Search_Tree_Size
 
 ## Disclaimer

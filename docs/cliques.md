@@ -36,7 +36,7 @@ Below is the backtracking algorithm for finding the cliques. It used by calling 
 
 
 ### The implementation
-The algorithm presented above has been implemented in **Python 3** and is located in the file **cliques.py**
+The algorithm presented above has been implemented in **Python 3** and is located in the file **src/cliques.py**
 
 There is a function inside of which the global variables are defined for the rest of the functions. This is was decided to make the program easily importable to other scripts without worrying about the globals. If you come up with a better approach, feel free to submit a Pull Request.
 
@@ -46,5 +46,11 @@ The function **setup** is used to initialize the global variables. The main goal
 
 Next is the function **allCliques** which implements the backtracking algorithm presented in the pseudocode.
 
-Finally, we have the function **estimateBacktrackSize** , which will be discussed in a later section.
+We also have the function **estimateBacktrackSize** , which will be discussed in a later section ([here](./backtrackingsize.md)).
+
+There is a test example in the comments at the end of the file. In this example, a networkx graph is created and it is the following:
+
+
+
+The function **findAllCliques** is called on this Graph and all the cliques will be found. When a clique is found, it is simply printed to the terminal.
 

@@ -49,7 +49,6 @@ def findAllCliques(graph):
 		global C, X
 
 		sum = 0
-		n = 30
 		for i in range(n):
 			s = 1
 			N = 1

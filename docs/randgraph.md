@@ -42,7 +42,7 @@ This ensures that the algorithm always provides a valid solution.
 
 ### The implementation
 
-The above algorithm is located in the file **randgraph.py**. The **createRandomGraph** function contains the actual algorithm. Notice that **E** is not actually global. This was done to make the code easier to be imported into another **.py** script.
+The above algorithm is located in the file **src/randgraph.py**. The **createRandomGraph** function contains the actual algorithm. Notice that **E** is not actually global. This was done to make the code easier to be imported into another **.py** script.
 
 At the end of the file there is block comment with an example. Feel free to uncomment it and test it yourself. Here is an example output:
 
