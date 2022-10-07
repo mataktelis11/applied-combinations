@@ -26,7 +26,7 @@ The algorithm presented above has been implemented in **Python 3** and is locate
 
 The following graph is contained in the comments of **cliques.py**
 
-<img src="https://user-images.githubusercontent.com/61196956/171457871-46abf6ca-1a85-4cfd-b4f1-a02031120112.png" width="400">
+<img src="https://user-images.githubusercontent.com/61196956/194624055-335c66ac-bc8a-4b6c-8ac5-0fd1287f884e.png" width="400">
 
 The backtracking tree for the above graph is the following
 
