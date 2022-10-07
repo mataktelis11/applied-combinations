@@ -2,21 +2,21 @@
 
 ### The algorithm
 
-The first algorithm creates a *random undirected graph* of *n* nodes and *k* edges.
+The first algorithm creates a **random undirected graph** of $n$ nodes and $k$ edges.
 
-We define the graph as *G = (V,E)*, where *V = {1,2, . . . , n}* and *|E| = k*. *E* is the a set that contains pairs of nodes. It is known that a graph can have a maximum of <img src="https://render.githubusercontent.com/render/math?math=N = \binom{n}{2}"> nodes.
+We define the graph as $G = (V,E)$, where $V = {1,2, . . . , n}$ and $|E| = k$. $E$ is the a set that contains pairs of nodes. It is known that a graph can have a maximum of $N = \binom{n}{2}$ nodes.
 
-We just need an algorithm that iterates through all the possible edges and randomly selects some of them, until exactly *k* edges are selected.
+We just need an algorithm that iterates through all the possible edges and randomly selects some of them, until exactly $k$ edges are selected.
 
 The following is the pseudo code of the algorithm given as an answer.
 
 <img src="https://user-images.githubusercontent.com/61196956/162618576-91c2fcd1-2dc2-41b6-b143-8d05dab49f15.png" width="800">
 
-We define a function that takes *n* and *k* as arguments and returns *E*. The function assumes that <img src="https://render.githubusercontent.com/render/math?math=k \le \binom{n}{2}">.
+We define a function that takes $n$ and $k$ as arguments and returns $E$. The function assumes that $k \le \binom{n}{2}$. 
 
-First the *N* is calculated. Simple find the binomial coefficient:
+First the $N$ is calculated. Simple find the binomial coefficient:
 
-<img src="https://render.githubusercontent.com/render/math?math=N = \binom{n}{2} = \frac{n!}{2!(n-2)!} = \frac{(n-1)n}{2}">
+$$N = \binom{n}{2} = \frac{n!}{2!(n-2)!} = \frac{(n-1)n}{2}$$
 
 and that explains line 2 in the pseudo code.
 
@@ -29,7 +29,7 @@ first call the rand function to generate a random value from **[0, 1)** and stor
 
 <img src="https://user-images.githubusercontent.com/61196956/162618459-449f9c4d-435e-4c82-9fae-64f918b5cf92.png" width="250">
 
-The probability that **U**is in the interval **[0, k/N]** is **k/N**. Then **E[t]** gets the edge **(i, j)**, **k** is reduced by 1 (because the elements that remain to be filled are reduced by 1) and **t** increases by 1 (as explained before).
+The probability that **U** is in the interval **[0, k/N]** is **k/N**. Then **E[t]** gets the edge **(i, j)**, **k** is reduced by 1 (because the elements that remain to be filled are reduced by 1) and **t** increases by 1 (as explained before).
 
 Then **N** decreases by 1, regardless of whether or not the condition was satisfied, which means that there are 1 less edges to select from.
 

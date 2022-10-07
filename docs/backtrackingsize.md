@@ -15,9 +15,9 @@ To calculate the size of the tree, we choose a random path from the **root** to 
 
 <img src="https://user-images.githubusercontent.com/61196956/171458294-965dbcc4-99eb-44e0-a7e7-6d6556002e08.png" width="750">
 
-Starting from the root, in each step, we enter the cardinality of **C_l** to variable **c**. Then **c** is then multiplied with **s**, which contains the number of nodes in the current level and the result is written to **s**. We then add **s** to **N**. This way we add the number of nodes which we **assume** exists in the **next layer** of the tree. Since we start from the root, we must initialize **s** with value 1.
+Starting from the root, in each step, we enter the cardinality of $C_l$ to variable **c**. Then **c** is then multiplied with **s**, which contains the number of nodes in the current level and the result is written to **s**. We then add **s** to **N**. This way we add the number of nodes which we **assume** exists in the **next layer** of the tree. Since we start from the root, we must initialize **s** with value 1.
 
-C_0 is initialized with V (set of nodes) and in every step X_l is chosen randomly (X_l is the next node). C_{l+1} is calculated by using the precomputed AB (similarly to the function **allCliques**). The algorithm stops when C_l becomes equal with the empty set, which means that a leaf was found.
+$C_0$ is initialized with $V$ (set of nodes) and in every step $X_l$ is chosen randomly ($X_l$ is the next node). $C_{l+1}$ is calculated by using the precomputed $AB$ (similarly to the function **allCliques**). The algorithm stops when $C_l$ becomes equal with the empty set, which means that a leaf was found.
 
 The algorithm is run multiple times and calculate the average in order to get a more accurate result.
 
